@@ -1,0 +1,122 @@
+@keyframes preloader-cloud-left {
+    from {
+        transform: translateX(-8%) translateY(50%);
+    }
+    to {
+        transform: translateX(calc(-8% + 50px)) translateY(50%);
+    }
+}
+@keyframes preloader-cloud-right {
+    from {
+        transform: translateX(20%)  translateY(-20%);
+    }
+    to {
+        transform: translateX(calc(20% - 50px))  translateY(-20%);
+    }
+}
+
+
+@keyframes preloader-content {
+    0% {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    25%, 75% {
+        top: calc(26.6px + (133 - 26.6) * ((100vw - 375px) / (1920 - 375)));
+        right: calc(72.4px + (362 - 72.4) * ((100vw - 375px) / (1920 - 375)));
+        left: calc(72.4px + (362 - 72.4) * ((100vw - 375px) / (1920 - 375)));
+        bottom: calc(35.4px + (177 - 35.4) * ((100vw - 375px) / (1920 - 375)));
+    }
+    100% {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+@media(min-width: 1920px){
+    @keyframes preloader-content {
+        0% {
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+        25%, 75% {
+            top: 133px;
+            right: 362px;
+            left: 362px;
+            bottom: 177px;
+        }
+        100% {
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+    }
+}
+@media(max-width: 375px){
+    @keyframes preloader-content {
+        0% {
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+        25%, 75% {
+            top: 26.6px;
+            right: 72.4px;
+            left: 72.4px;
+            bottom: 35.4px;
+        }
+        100% {
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+    }
+}
+
+@keyframes preloader-image{
+    0% {
+        opacity: 0;
+        transform: translateY(-50%) translateX(-8vw);
+    }
+    20%,70% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(calc(-50% - 50%)) translateX(calc(-8vw - 80%));
+    }
+}
+
+@keyframes preloader{
+    14%, 86%{
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+
+@keyframes preloader-text-span{
+    0% {
+        transform: translateY(70%);
+    }
+    10%, 60%{
+        opacity: 1;
+    }
+    90%{
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+}
+@keyframes preloader-text{
+    30%, 90%{
+        opacity: 1;
+    }
+}

@@ -1,0 +1,222 @@
+body {
+    background-color: #fff;
+}
+
+#preloader{
+    display: none;
+    animation-name: preloader;
+    animation-duration: 3.8s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 101;
+    user-select: none;
+    pointer-events: none;
+}
+body.visibled-preloader #preloader{
+    display: block;
+}
+
+#preloader::before,
+#preloader::after{
+    content: '';
+    position: absolute;
+    height: 30vh;
+    width: 124vh;
+    left: 0;
+    top: 0;
+    transform: translateX(-8%) translateY(50%);
+    background-image: url('./../images/cloud-left.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    z-index: 5;
+    animation-name: preloader-cloud-left;
+    animation-delay: .3s;
+    animation-duration: 3.2s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+}
+
+#preloader::after{
+    left: auto;
+    right: 0;
+    top: auto;
+    animation-name: preloader-cloud-right;
+    transform: translateX(20%)  translateY(-20%);
+    bottom: 0;
+    height: 60vh;
+    width: 248vh;
+    background-image: url('./../images/cloud-right.png');
+    z-index: 5;
+}
+
+
+#preloader > div:first-of-type{
+    animation-name: preloader-content;
+    animation-delay: .3s;
+    animation-duration: 3.2s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.preloader-image{
+    height: auto;
+    width: 40vw;
+    min-width: 275px;
+    right: 0;
+    top: 60%;
+    transform: translateY(-50%) translateX(-8vw);
+    z-index: 4;
+    opacity: 0;
+    animation-name: preloader-image;
+    animation-delay: .3s;
+    animation-duration: 3.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+
+.preloader-text{
+    position: absolute;
+    bottom: 261px;
+    text-align: center;
+    width: 100%;
+    z-index: 7;
+    /* opacity: 0;
+    animation-name: preloader-text;
+    animation-duration: 3.2s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1; */
+}
+
+
+.preloader-text > span {
+    animation-name: preloader-text-span;
+    animation-duration: 2.9s;
+    animation-timing-function: cubic-bezier(.20, 0.63, .98, 0);
+    animation-iteration-count: 1;
+    transform: translateY(70%);
+    display: inline-block;
+    opacity: 0;
+}
+
+.preloader-text > span:nth-child(1){
+    animation-delay: .4s;
+}
+.preloader-text > span:nth-child(2){
+    animation-delay: .5s;
+}
+.preloader-text > span:nth-child(3){
+    animation-delay: .6s;
+}
+
+main, header, footer{
+    opacity: 0;
+    transition: opacity .3s ease;
+}
+
+body.visibled-content main,
+body.visibled-content header,
+body.visibled-content footer{
+    opacity: 1;
+}
+
+.logo {
+    position: relative;
+    height: 100px;
+    overflow: hidden;
+}
+
+.logo img{
+    height: 100px;
+    transform: translateY(100%);
+    transition: transform .6s ease .2s;
+}
+body.content-animated .logo img{
+    transform: translateY(0%);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-hamburger{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-family: 'SourceSansPro';
+    font-weight: 600;
+    font-size: 14px;
+    color: #2B1A67;
+    text-transform: uppercase;
+}
+.menu-hamburger svg{
+    margin-left: 10px;
+}
+
+.square-bg{
+    right: 100%;
+    transition: right .6s ease .2s;
+}
+body.content-animated .square-bg{
+    right: calc(44px + (223 - 44) * ((100vw - 375px) / (1920 - 375)));
+}
+@media(min-width: 1920px){
+    body.content-animated .square-bg{
+        right: 223px;
+    }
+}
+@media(max-width: 375px){
+    body.content-animated .square-bg{
+        right: 44px;
+    }
+}
+.front-image{
+    position: relative;
+    z-index: 3;
+    transform: translateX(40vw) translateY(0);
+    transition: transform 5s ease .2s, opacity 2s ease .2s;
+    opacity: 0;
+}
+body.content-animated .front-image{
+    transform: translateX(calc(40vw - 20%)) translateY(-10%);
+    opacity: 1;
+}
+
+.page-title span{
+    display: inline-block;
+    transform: translateY(70%);
+    opacity: 0;
+    transition: transform .6s ease-out, opacity .3s ease;
+}
+
+.page-title > span:nth-child(1){
+    transition-delay: .2s;
+}
+.page-title > span:nth-child(2){
+    transition-delay: .3s;
+}
+.page-title > span:nth-child(3){
+    transition-delay: .4s;
+}
+
+body.content-animated .page-title span{
+    transform: translateY(0) ;
+    opacity: 1;
+}
+
+section{
+    overflow: hidden;
+}

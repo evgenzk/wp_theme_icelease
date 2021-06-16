@@ -1,0 +1,228 @@
+.u-bc\@beige{
+    background-color: #F1F0E9;
+}
+.u-bc\@white{
+    background-color: #FFF;
+}
+.u-color\@blue{
+    color: #2B1967;
+}
+.u-color\@white{
+    color: #FFF;
+}
+.u-align-center{
+    text-align: center;
+}
+
+
+.u-hidden{
+    overflow: hidden;
+}
+.u-block{
+    display: block;
+}
+.u-inline-block{
+    display: inline-block;
+}
+.u-fit{
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+
+
+.u-pos-absolute{
+    position: absolute
+}
+.u-pos-relative{
+    position: relative
+}
+
+
+
+
+
+
+.u-pos-t\@133{
+    top: calc(15px + (133 - 15) * ((100vw - 375px) / (1920 - 375)));
+}
+
+@media(min-width: 1920px){
+    .u-pos-t\@133{
+        top: 133px;
+    }
+}
+@media(max-width: 375px){
+    .u-pos-t\@133{
+        top: 15px;
+    }
+}
+
+.u-pos-t\@280{
+    top: calc(56px + (280 - 56) * ((100vw - 375px) / (1920 - 375)));
+}
+
+@media(min-width: 1920px){
+    .u-pos-t\@280{
+        top: 280px;
+    }
+}
+@media(max-width: 375px){
+    .u-pos-t\@280{
+        top: 15px;
+    }
+}
+
+
+
+
+.u-pos-lr\@362{
+    right: calc(15px + (362 - 15) * ((100vw - 375px) / (1920 - 375)));
+    left: calc(15px + (362 - 15) * ((100vw - 375px) / (1920 - 375)));
+}
+@media(min-width: 1920px){
+    .u-pos-lr\@362{
+        right: 362px;
+        left: 362px;
+    }
+}
+@media(max-width: 375px){
+    .u-pos-lr\@362{
+        right: 15px;
+        left: 15px;
+    }
+}
+
+
+
+
+.u-pos-b\@177{
+    bottom: calc(15px + (177 - 15) * ((100vw - 375px) / (1920 - 375)));
+}
+@media(min-width: 1920px){
+    .u-pos-b\@177{
+        bottom: 177px;
+    }
+}
+@media(max-width: 375px){
+    .u-pos-b\@177{
+        bottom: 15px;
+    }
+}
+
+.u-pad-lr\@120{
+    padding-left: calc(15px + (120 - 15) * ((100vw - 375px) / (1920 - 375)));
+    padding-right: calc(15px + (120 - 15) * ((100vw - 375px) / (1920 - 375)));
+}
+@media(min-width: 1920px){
+    .u-pad-lr\@120{
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+}
+@media(max-width: 375px){
+    .u-pad-lr\@120{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+
+.t-h1,
+.t-h2,
+.t-h3,
+.t-h4,
+.t-h5,
+.t-h6{
+    font-family: 'DomaineDisplaySemibold';
+}
+.t-h1{
+    font-size: calc(42px + (67 - 42) * ((100vw - 375px) / (1920 - 375)));
+}
+@media(min-width: 1920px){
+    .t-h1{
+        font-size: 67px;
+    }
+}
+@media(max-width: 375px){
+    .t-h1{
+        font-size: 42px;
+    }
+}
+
+.t-h2{
+    font-size: calc(40px + (60 - 40) * ((100vw - 375px) / (1920 - 375)));
+}
+@media(min-width: 1920px){
+    .t-h2{
+        font-size: 60px;
+    }
+}
+@media(max-width: 375px){
+    .t-h2{
+        font-size: 40px;
+    }
+}
+
+.u-pos-l\@329{
+    left: calc(66px + (329 - 66) * ((100vw - 375px) / (1920 - 375)));
+}
+@media(min-width: 1920px){
+    .u-pos-l\@329{
+        left: 329px;
+    }
+}
+@media(max-width: 375px){
+    .u-pos-l\@329{
+        left: 66px;
+    }
+}
+
+.u-pos-l\@225{
+    left: calc(45px + (225 - 45) * ((100vw - 375px) / (1920 - 375)));
+}
+@media(min-width: 1920px){
+    .u-pos-l\@225{
+        left: 225;
+    }
+}
+@media(max-width: 375px){
+    .u-pos-l\@225{
+        left: 45px;
+    }
+}
+
+
+
+.u-pos-t\@88{
+    top: calc(16px + (88 - 16) * ((100vw - 375px) / (1920 - 375)));
+}
+@media(min-width: 1920px){
+    .u-pos-t\@88{
+        top: 88px;
+    }
+}
+@media(max-width: 375px){
+    .u-pos-t\@88{
+        top: 16px;
+    }
+}
+
+.u-pos-r\@223{
+    right: calc(44px + (223 - 44) * ((100vw - 375px) / (1920 - 375)));
+}
+@media(min-width: 1920px){
+    .u-pos-r\@223{
+        right: 223px;
+    }
+}
+@media(max-width: 375px){
+    .u-pos-r\@223{
+        right: 44px;
+    }
+}
+.square-bg{
+    height: 550px;
+}

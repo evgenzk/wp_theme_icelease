@@ -1,0 +1,29 @@
+@font-face {
+	font-family: 'DomaineDisplaySemibold';
+	src: url('./../fonts/DomaineDisplaySemibold/DomaineDisplaySemibold.eot');
+    src: local('☺'), 
+         url('./../fonts/DomaineDisplaySemibold/DomaineDisplaySemibold.woff') format('woff'),
+         url('./../fonts/DomaineDisplaySemibold/DomaineDisplaySemibold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SourceSansPro';
+	src: url('./../fonts/SourceSansPro/light/SourceSansPro-Light.eot');
+    src: local('☺'), 
+         url('./../fonts/SourceSansPro/light/SourceSansPro-Light.woff') format('woff'),
+         url('./../fonts/SourceSansPro/light/SourceSansPro-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SourceSansPro';
+	src: url('./../fonts/SourceSansPro/semibold/SourceSansPro-SemiBold.eot');
+    src: local('☺'), 
+         url('./../fonts/SourceSansPro/semibold/SourceSansPro-SemiBold.woff') format('woff'),
+         url('./../fonts/SourceSansPro/semibold/SourceSansPro-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
